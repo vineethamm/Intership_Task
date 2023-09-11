@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <style>
+
+        body{
+            width:50%;
+        }
+        
+        .box{
+            text-align: center;
+            overflow: auto;
+            border:1px solid black;
+            display:flex;
+            padding:1px;
+        }
+        
+        .button {
+            padding: 40px 70px 40px 1px;
+            margin-top:10px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            border:none;
+            border-radius:10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .button:hover {
+            padding-left: 10px;
+        }
+
+        .message {
+            flex-grow:1;      
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="buttons">
+            <button class="button" style="background-color:forestgreen;"></button>
+            <button class="button" style="background-color:rgb(0, 128, 255);"></button>
+            <button class="button" style="background-color:red;"></button>
+            <button class="button" style="background-color:darkgray"></button>
+        </div>
+        <div class="message">
+            <h1>Hoverable Sidenav Buttons</h1>
+            <p>Hover over the buttons in left side navigation to open them</p>
+        </div>
+    </div>
+</body>
+
+</html>

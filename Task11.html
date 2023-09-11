@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11</title>
+    <style>
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 25%;
+            margin-top: 50px;
+            margin-left: 35%;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .login {
+            background-color: green;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        .image {
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: fit;
+            width: 150px;
+            height: 150px;
+
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            background-color:gainsboro;
+            border-top:1px;
+            border-color:cadetblue;
+            padding:10px 2px 10px 2px;
+        }
+
+        .image-div {
+            text-align: center;
+        }
+
+        .cancel{
+            background-color:red;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="image-div">
+            <img src="./profile.jpeg" alt="Profile" class="image">
+        </div>
+        </br>
+        <form class="login-form" action="login.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter Username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter Password">
+
+            <input type="submit" value="Login" class="login">
+        </form>
+        <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+        </div>
+
+        <div class="links">
+
+            <div>
+                <input type="submit" value="Cancel" class="cancel">
+            </div>
+            <div>
+                Forgot <a href="#">password?</a>
+            </div>
+
+            
+        </div>
+</body>
+
+</html>

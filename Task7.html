@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style>
+        .box {
+            width: 50%;
+            display: flex;
+            text-align: center;
+            overflow:auto;
+            justify-content: space-between;
+        }
+
+        .vertical{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+        .horizondal{
+            flex-grow:1;
+            margin:50px;
+        }
+        #vertical-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 10px 0px 10px;
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        .vertical-li a {
+            display: block;
+            padding: 8px 16px;
+            background-color: cadetblue;
+            text-decoration: none;
+            color: blue;
+            font-size: large;
+        }
+
+        .vertical-li a.active1 {
+            background-color: chocolate;
+            color: white;
+        }
+
+        .vertical-li a:hover:not(.active1) {
+            background-color: #555;
+
+        }
+
+        #horizontal-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0px 10px 10px;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+
+        .horizontal-li {
+            float: left;
+        }
+
+        .horizontal-li a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: blue;
+            font-size: large;
+            background-color: darkgrey;
+            border-right:1px;
+            border-color: blue;
+        }
+
+        .horizontal-li a:hover:not(.active2) {
+            background-color: #111;
+
+        }
+
+        .horizontal-li .active2 {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="vertical">
+            <h3>Vertical navigation bar</h3>
+            <ul id="vertical-list">
+                <li class="vertical-li"><a class="active1" href="#HOME">Home</a></li>
+                <li class="vertical-li"><a href="#Java">Java</a></li>
+                <li class="vertical-li"><a href="#CSS">CSS</a></li>
+                <li class="vertical-li"><a href="#HTML">HTML</a></li>
+                <li class="vertical-li"><a href="#Bootstrap">Bootstrap</a></li>
+            </ul>
+        </div>
+
+        <div class="horizondal">
+            <h3>Horizontal navigation bar</h3>
+            <ul id="horizontal-list">
+                <li class="horizontal-li"><a class="active2" href="#home">Home </a></li>
+                <li class="horizontal-li"><a href="#Java">Java </a></li>
+                <li class="horizontal-li"><a href="#HTML">HTML </a></li>
+                <li class="horizontal-li"><a href="#CSS">CSS </a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+    <style>
+        body {
+            background-color: rgb(217, 218, 62);
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            text-align: center;
+            overflow: auto;
+            display:flex;
+            padding:1px;
+            width:45%;
+        }
+        #vertical-list {
+            list-style-type: none;
+            width: 250px;
+            float: left;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left:40px;
+        }
+
+        .vertical-li a {
+            display: block;
+            text-decoration: none;
+            color: blue;
+            background: linear-gradient(to right, rgb(255, 255, 255) 85%, rgb(0, 0, 0) 15%);
+            padding: 10px 30px;
+            margin: 5px 0px;
+            text-align: left;
+            width:100px;
+        }
+
+        .vertical-li a.active{
+            color:brown;
+        }
+
+        .content {
+            padding:0px;
+            margin-left: 0px;    
+            text-align: left;
+        }
+
+        .content h1 {
+            color: rgb(195, 40, 75);
+        }
+
+        .content p {
+            color: rgb(174, 40, 40);
+            padding-bottom: 0px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:larger;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    <div class="side-nav">
+        <ul id="vertical-list">
+            <li class="vertical-li"><a class="active" href="#HOME">Home Page</a></li>
+            <li class="vertical-li"><a href="#Musings">Musings</a></li>
+            <li class="vertical-li"><a href="#Mytown">My Town</a></li>
+            <li class="vertical-li"><a href="#links">Links</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>My first styled page</h1>
+        <p>Welcome to my styled page!</p>
+        <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+        <p>There should be more here but I don't know what yet.</p>
+        <hr>
+        <p>Made 5 April 2004<br>by myself.</p>
+    </div>
+</div>
+
+</body>
+
+</html>
